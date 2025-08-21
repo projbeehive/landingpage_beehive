@@ -1,4 +1,4 @@
-// File: C:\Users\Inteli\Desktop\beehive-landing\app\page.tsx
+// File: C:\Users\Inteli\Documents\GitHub\landingpage_beehive\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

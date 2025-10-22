@@ -22,14 +22,20 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
-              {["Sobre nós", "Programas", "Depoimentos", "Equipe", "Contato"].map((link, index) => (
+              {[
+                { name: "Sobre nós", href: "#sobre-nos" },
+                { name: "Programas", href: "#programas" },
+                { name: "Depoimentos", href: "#depoimentos" },
+                { name: "Equipe", href: "#equipe" },
+                { name: "Contato", href: "#contato" }
+              ].map((link, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href={link.href}
                     className="text-gray-400 hover:text-white transition-colors text-sm"
-                    aria-label={`Navegar para ${link}`}
+                    aria-label={`Navegar para ${link.name}`}
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}

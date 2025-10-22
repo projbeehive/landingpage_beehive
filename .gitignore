@@ -8,12 +8,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Next.js build output
-next-env.d.ts
-next.config.js
-.next
 .next/
-.next/cache
 out/
+next-env.d.ts
 .vercel/
 .vercel_build_output/
 .vercel/output

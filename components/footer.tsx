@@ -8,8 +8,8 @@ export default function Footer() {
           {/* Logo e descrição */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
-                <span className="text-gray-900 font-bold text-sm">B</span>
+              <div className="w-8 h-8">
+                <img src="./logo.svg" alt="BeeHive Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-xl font-bold">BeeHive</span>
             </div>
@@ -53,9 +53,11 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-yellow-400" />
                 <a
-                  href="tel:5511953461173"
+                  href="https://wa.me/5511953461173?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20BeeHive."
                   className="text-gray-400 hover:text-white transition-colors text-sm"
-                  aria-label="Ligar para (11) 95346-1173"
+                  aria-label="Conversar no WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   (11) 95346-1173
                 </a>

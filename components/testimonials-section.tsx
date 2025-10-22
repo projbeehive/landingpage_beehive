@@ -18,63 +18,63 @@ import { Button } from "@/components/ui/button";
 
 type Testimonial = {
   name: string;
-  grade: "8º ano" | "1º ano";
+  grade: "7º ano" | "9º ano";
   city: string;
   state: string;
   year: string;
   image?: string;
-  projects: string[]; // ["ISMART", "ISMART Academia Digital", "Instituto Ponte"]
-  story: string; // depoimento curto, foco educacional
-  achievements: string[]; // aprovações, bolsas, trilhas concluídas
+  projects: string[];
+  story: string;
+  achievements: string[];
 };
 
 const testimonials: Testimonial[] = [
   {
-    name: "Ana Beatriz",
-    grade: "8º ano",
+    name: "Leandra Carneiro | Responsável",
+    grade: "7º ano",
+    city: "São Paulo",
+    state: "SP",
+    year: "2025",
+    image: "./placeholdersImage.png",
+    projects: ["ISMART"],
+    story:
+      "Muito obrigada por todo acolhimento que minha filha e nós, pais, estamos recebendo. Confesso que é algo novo, desconhecia esta oportunidade e somos gratos por poder participar. Já nos sentimos parte do ISMART, mais até que da atual instituição de ensino que ela frequenta desde a primeira infância. Espero que ela consiga realizar o seu sonho e...",
+    achievements: [
+      "Melhora acadêmica da aluna",
+      "Evolução acadêmica e emocional da aluna",
+      "Maior engajamento familiar com a educação",
+    ],
+  },
+  {
+    name: "Aluno do Beehive",
+    grade: "7º ano",
     city: "Belo Horizonte",
     state: "MG",
-    year: "2024",
-    image: "/anabeatriz.png",
-    projects: ["ISMART"],
-    story:
-      "Eu sempre gostei de estudar, mas não sabia por onde começar para as provas. Com os simulados e materiais, consegui me organizar e entender o edital.",
-    achievements: [
-      "Aprovação na 1ª fase do ISMART",
-      "Bolsa completa no colégio da cidade",
-      "Aluna destaque dentro do projeto",
-    ],
-  },
-  {
-    name: "João Pedro",
-    grade: "1º ano",
-    city: "Rio de Janeiro",
-    state: "RJ",
     year: "2025",
-    image: "/joaopedro.png",
-    projects: ["Instituto Ponte"],
+    image: "./placeholdersImage.png",
+    projects: ["ISMART"],
     story:
-      "Usei as aulas digitais e o apoio dos professores para treinar. Melhorei muito em lógica e matemática, que me ajudou bastante.",
+      "Amo o BEEHIVE, ele está sendo uma ótima oportunidade para mim e uma prova de me mostrar que eu consigo vencer obstáculos difíceis para, no final, ganhar o que eu tanto quero: passar no ISMART.",
     achievements: [
-      "90% de acerto nas questões de matemática",
-      "Trilha de aulas finalizada",
-      "Primeiro da família a conquistar posições como essa na escola",
+      "Dedicação e disciplina nas aulas do Beehive",
+      "Aprovação em simulados e etapas preparatórias",
+      "Fortalecimento da autoconfiança e persistência",
     ],
   },
   {
-    name: "Marcos Vinícius",
-    grade: "1º ano",
-    city: "São José dos Campos",
-    state: "SP",
-    year: "2024",
-    image: "/marcosvinicius.png",
+    name: "Aluno do Beehive",
+    grade: "7º ano",
+    city: "Curitiba",
+    state: "PR",
+    year: "2025",
+    image: "./placeholdersImage.png",
     projects: ["ISMART"],
     story:
-      "As rotas de estudo me ajudaram a criar rotina. Com os horários de aulas e apoio dos professores, conquistei bolsa integral em uma escola particular.",
+      "Gosto muito das aulas do BEEHIVE, com elas consegui aprender diversos conceitos que eu nem pensava em estudar e isso me ajudou muito a me sentir mais confiante em relação à matemática.",
     achievements: [
-      "Bolsa integral em escola parceira",
-      "Notas ótimas dentro das provas",
-      "Participação em olimpíada escolar de matemática",
+      "Melhoria significativa no desempenho em matemática",
+      "Conclusão de trilhas de estudo do Beehive",
+      "Participação em atividades de reforço e desafios lógicos",
     ],
   },
 ];
@@ -152,7 +152,7 @@ export default function TestimonialsSectionFixed() {
                   </div>
 
                   {/* Depoimento curto */}
-                  <div className="mt-5 sm:mt-6 text-white/95 italic leading-relaxed line-clamp-5 sm:line-clamp-4 text-sm sm:text-base">
+                  <div className="mt-5 sm:mt-6 text-white/95 italic leading-relaxed sm:line-clamp-6 text-sm sm:text-base">
                     “{t.story}”
                   </div>
 
@@ -251,6 +251,7 @@ export default function TestimonialsSectionFixed() {
           <Button
             size="lg"
             className="w-full sm:w-auto bg-gradient-to-r from-[#FFAE11] to-[#FFAE41] hover:from-amber-600 hover:to-orange-700 text-white text-lg px-6 sm:px-8 md:px-10 py-4 rounded-xl"
+            onClick={() => window.open('https://wa.me/5511953461173?text=Olá!%20Gostaria%20de%20começar%20minha%20preparação%20com%20a%20BeeHive.', '_blank')}
           >
             Começar agora
           </Button>

@@ -4,8 +4,11 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Beehive',
-  description: 'Projeto social para conectar e compartilhar oportunidades.',
+  title: 'BeeHive',
+  description: 'Conectando talentos a oportunidades através de educação e aulas de qualidade.',
+  icons: {
+    icon: '/logo.svg',
+  },
 }
 
 export default function RootLayout({

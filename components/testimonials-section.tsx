@@ -251,7 +251,7 @@ export default function TestimonialsSectionFixed() {
           <Button
             size="lg"
             className="w-full sm:w-auto bg-gradient-to-r from-[#FFAE11] to-[#FFAE41] hover:from-amber-600 hover:to-orange-700 text-white text-lg px-6 sm:px-8 md:px-10 py-4 rounded-xl"
-            onClick={() => window.open('https://wa.me/5511953461173?text=Olá!%20Gostaria%20de%20começar%20minha%20preparação%20com%20a%20BeeHive.', '_blank')}
+            onClick={() => window.open('https://busca.projeto-beehive.com.br', '_blank')}
           >
             Começar agora
           </Button>

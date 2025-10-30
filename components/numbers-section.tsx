@@ -126,7 +126,7 @@ export default function NumbersSection() {
           <Button
             size="lg"
             className="w-96 bg-gradient-to-r from-[#FFAE11] to-[#FFAE11] hover:from-[#FFAE11]/80 hover:to-[#FFAE11]/80 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() => window.open('https://wa.me/5511953461173?text=Olá!%20Gostaria%20de%20me%20inscrever%20nas%20aulas%20da%20BeeHive.', '_blank')}
+            onClick={() => window.open('https://busca.projeto-beehive.com.br', '_blank')}
           >
             Quero me inscrever agora
           </Button>

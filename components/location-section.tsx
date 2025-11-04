@@ -34,10 +34,6 @@ export default function LocationSection() {
                     todas as cidades do Brasil que <em>não</em> sejam as quatro acima.
                   </span>
                 </li>
-                <li>
-                  <strong>Instituto Ponte</strong>: disponível em
-                  <span className="ml-1">qualquer cidade do Brasil.</span>
-                </li>
               </ul>
             </div>
 
@@ -63,10 +59,10 @@ export default function LocationSection() {
             {/* Destaques (opcional) */}
             <div className="space-y-4">
               {[
-                { city: "São Paulo (capital)", state: "SP", description: "ISMART; Instituto Ponte" },
-                { city: "São José dos Campos", state: "SP", description: "ISMART; Instituto Ponte" },
-                { city: "Rio de Janeiro (capital)", state: "RJ", description: "ISMART; Instituto Ponte" },
-                { city: "Belo Horizonte", state: "MG", description: "ISMART; Instituto Ponte" },
+                { city: "São Paulo (capital)", state: "SP", description: "ISMART" },
+                { city: "São José dos Campos", state: "SP", description: "ISMART" },
+                { city: "Rio de Janeiro (capital)", state: "RJ", description: "ISMART" },
+                { city: "Belo Horizonte", state: "MG", description: "ISMART" },
               ].map((loc, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" />

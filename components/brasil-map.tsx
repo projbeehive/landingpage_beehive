@@ -19,13 +19,13 @@ function getProjectsForState(stateName: string): string[] {
   const rj = IS_RJ.has(stateName);
   const mg = IS_MG.has(stateName);
 
-  // Instituto Ponte → sempre
+  //→ sempre
   // ISMART → apenas se for SP/MG/RJ (estado com cidade atendida)
   // ISMART Academia Digital → todos os estados (mas nas 4 cidades específicas não vale; como é tooltip por estado, mantemos disponível no estado)
   if (sp || rj || mg) {
-    return ["ISMART", "ISMART Academia Digital", "Instituto Ponte"];
+    return ["ISMART", "ISMART Academia Digital"];
   }
-  return ["ISMART Academia Digital", "Instituto Ponte"];
+  return ["ISMART Academia Digital"];
 }
 
 export default function BrazilMap({ onStateClick, className }: BrazilMapProps) {
